@@ -1,0 +1,81 @@
+@mixin animationColor() {
+  transition: color 250ms $timingDurationFunction;
+}
+
+@mixin fill() {
+  transition: fill 250ms $timingDurationFunction;
+}
+
+@mixin animationBG() {
+  transition: background-color 250ms $timingDurationFunction;
+}
+
+@mixin animationBC() {
+  transition: border-color 250ms $timingDurationFunction;
+}
+
+@mixin animationColor-BG() {
+  transition: color 250ms $timingDurationFunction,
+    background-color 250ms $timingDurationFunction;
+}
+
+@mixin animationColor-BC() {
+  transition: color 250ms $timingDurationFunction,
+    border-color 250ms $timingDurationFunction;
+}
+
+@mixin translateY() {
+  transition: -webkit-transform 250ms $timingDurationFunction;
+}
+
+@mixin translate() {
+  transition: -webkit-transform 250ms $timingDurationFunction,
+    translateX 250ms $timingDurationFunction;
+}
+
+@mixin opacity() {
+  transition: opacity 250ms $timingDurationFunction;
+}
+
+@mixin title() {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+@mixin buttonHoverFocus() {
+  background-color: $buttonHoverFocusColor;
+  box-shadow: $dropShadow;
+  border-radius: 4px;
+}
+
+@mixin buttonPortfolioHoverFocus {
+  background-color: $accentColor;
+  color: $primaryBackground-color;
+  box-shadow: $boxShadowPortfolioButton;
+}
+
+@mixin amimationPortfolioFilterButton {
+  transition: -webkit-box-shadow 250ms $timingDurationFunction,
+    color 250ms $timingDurationFunction,
+    background-color 250ms $timingDurationFunction;
+}
+
+@mixin portfolioFilterButtonHoverFocus {
+  background-color: $accentColor;
+  color: $primaryBackground-color;
+  box-shadow: $boxShadowPortfolioButton;
+}
+
+@mixin container($vievport) {
+  width: $vievport;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin section($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}

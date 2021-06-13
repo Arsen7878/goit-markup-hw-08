@@ -1,0 +1,57 @@
+.activity {
+  @media (min-width: $mobile) {
+    @include section(60px, 60px);
+  }
+}
+
+.activity__container {
+  @media (min-width: $mobile) {
+    @include container($mobile);
+  }
+
+  @include container($desktop);
+}
+
+.activity__title {
+  @extend %titleTextList;
+  @include title();
+  margin-bottom: 50px;
+}
+
+.activity__list {
+  @extend %titleTextList;
+  display: flex;
+}
+
+.activity__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.activity__box {
+  position: relative;
+}
+
+.activity__trumb {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+
+  display: flex;
+  width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $activityBg;
+}
+
+.activity__text {
+  @extend %titleTextList;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primaryBackground-color;
+}

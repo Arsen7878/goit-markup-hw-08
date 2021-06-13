@@ -1,0 +1,85 @@
+// Основной цвет текста
+$primaryColor: #212121;
+
+// Основной цвет фона
+$primaryBackground-color: #ffffff;
+
+// Вторичный цвет текста
+$secondaryColor: #757575;
+
+// Вторичный цвет фона
+$secondaryBackground-color: #2f303a;
+
+// Цвет акцента
+$accentColor: #2196f3;
+
+// Цвет фона оверлея
+$overlayBG: rgba(33, 150, 243, 0.9);
+
+// Единичный цвет
+$singleColor: rgba(255, 255, 255, 0.6);
+
+// Единичный фон у соц ссылок в футере
+$singleLinkFooter: rgba(255, 255, 255, 0.1);
+
+// Единичный фон
+$singleBackground-color: #f5f4fa;
+
+// Цвет соцю ссылок
+$socialsLinks: #afb1b8;
+
+// Цвет соц ссылок в футере
+
+$addressLink: rgba(255, 255, 255, 0.6);
+
+// Фон бэкдропа
+$backdropBackground-color: rgba(0, 0, 0, 0.2);
+
+// Цвет фона для карточек секции "Вид дейтельности"
+$activityBg: rgba(47, 48, 58, 0.8);
+
+// Функция распределения времени при анимации
+$timingDurationFunction: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Основной шрифт
+$primaryFont: Roboto, sans-serif;
+
+// Вторичный шрифт
+$secondaryFont: Raleway, sans-serif;
+
+// Бокс шадоу для бэкдропа
+$boxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$boxShadowPortfolioButton: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+
+$boxShadowHoverGaleryCard: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
+// Цвет бордера для блока Подписки
+$subscriptionBorderColor: rgba(255, 255, 255, 0.3);
+
+// Дроп-шадоу ждя блока подписки
+$dropShadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+
+// Цвет бордера для формы модального окна
+$borderColorInputFormModal: rgba(33, 33, 33, 0.2);
+
+// Цвет плейсхолдера
+$placehpderColor: rgba(117, 117, 117, 0.5);
+
+// Цвет ховера для основных кнопок
+$buttonHoverFocusColor: #188ce8;
+
+// Цвет бордера кнопки закрытия модального окна
+$borderButtonCloseColor: rgba(0, 0, 0, 0.1);
+
+// Цвет бордера хедера
+$borderColorFooter: #ececec;
+
+// Цвет оверлея при фокусе
+$overlayFocus: rgba(33, 150, 243, 0.9);
+
+// Цвет бордера карточек для портфолио
+$borderColorCardPortfolio: #eeeeee; ;

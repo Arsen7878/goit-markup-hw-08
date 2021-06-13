@@ -1,0 +1,41 @@
+.address {
+  width: 231px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address__title {
+  @extend %titleTextList;
+  margin-top: 20px;
+  margin-bottom: 9px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+
+  color: $primaryBackground-color;
+}
+
+.address__contacts {
+  @extend %titleTextList;
+}
+
+.address__mail {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  @extend %link;
+  color: $addressLink;
+
+  @include animationColor();
+
+  &:focus,
+  &:hover {
+    color: $accentColor;
+  }
+}

@@ -1,0 +1,29 @@
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  transform: translateY(100%);
+
+  @include translateY();
+
+  .galery-card:hover & {
+    transform: translateY(0);
+  }
+}
+
+.overlay__text {
+  @extend %titleTextList;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 64px 24px;
+
+  color: $primaryBackground-color;
+  background-color: $overlayFocus;
+}

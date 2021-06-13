@@ -1,0 +1,54 @@
+.subscription {
+  margin-left: 93px;
+}
+
+.subscription__title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primaryBackground-color;
+}
+
+.form-subscription {
+  position: relative;
+  display: flex;
+}
+.form-subscription__input {
+  @extend %input;
+  display: flex;
+
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+
+  background-color: inherit;
+  color: $primaryBackground-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $subscriptionBorderColor;
+  box-sizing: border-box;
+  filter: drop-shadow($dropShadow);
+  border-radius: 4px;
+
+  @include animationBC();
+
+  .form-subscription__label:hover & {
+    border-color: $accentColor;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $addressLink;
+  }
+}

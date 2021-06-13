@@ -1,0 +1,38 @@
+.header-contacts {
+  @extend %titleTextList;
+
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contacts__link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $secondaryColor;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  @include animationColor();
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.contacts__icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+}

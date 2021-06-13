@@ -1,0 +1,82 @@
+.clients {
+  @media (min-width: $mobile) {
+    @include section(60px, 60px);
+  }
+  @media (min-width: $desktop) {
+    @include section(94px, 94px);
+  }
+}
+
+.clients__container {
+  @media (min-width: $mobile) {
+    @include container($mobile);
+  }
+  @media (min-width: $tablet) {
+    @include container($tablet);
+  }
+  @media (min-width: $desktop) {
+    @include container($desktop);
+  }
+}
+
+.clients__title {
+  @extend %titleTextList;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  @media (min-width: $mobile) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  @extend %titleTextList;
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+.clients__item {
+  @media (min-width: $mobile) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $socialsLinks;
+  border-radius: 4px;
+  color: $socialsLinks;
+
+  @include animationColor-BC();
+
+  &:focus,
+  &:hover {
+    color: $accentColor;
+    border-color: $accentColor;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

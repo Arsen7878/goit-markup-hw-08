@@ -1,0 +1,17 @@
+.logo {
+  @extend %link;
+  color: $primaryColor;
+
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo__accent {
+  color: $accentColor;
+}
+
+.page-footer__logo {
+  color: $primaryBackground-color;
+}

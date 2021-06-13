@@ -1,0 +1,21 @@
+.page-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 80px;
+  z-index: 2;
+  background-color: $primaryBackground-color;
+  border-bottom: 1px solid $borderColorFooter;
+}
+
+.page-header__container {
+  @include container($desktop);
+  display: flex;
+  align-items: center;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}

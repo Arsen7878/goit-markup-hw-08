@@ -1,0 +1,43 @@
+.galery-card {
+  width: 370px;
+  margin: 15px;
+
+  &:hover {
+    box-shadow: $boxShadowHoverGaleryCard;
+  }
+}
+
+.galery-card__link {
+  @extend %link;
+}
+
+.galery-card__trumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.galery-card__meta {
+  padding: 20px 24px;
+  border-left: 1px solid $borderColorCardPortfolio;
+  border-right: 1px solid $borderColorCardPortfolio;
+  border-bottom: 1px solid $borderColorCardPortfolio;
+}
+
+.galery-card__title {
+  @extend %titleTextList;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.galery-card__text {
+  @extend %titleTextList;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.71;
+
+  color: $secondaryColor;
+}
