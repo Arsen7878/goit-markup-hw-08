@@ -4,10 +4,23 @@
 
   background-color: $secondaryBackground-color;
   color: $primaryBackground-color;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .page-footer__container {
+  @media (min-width: $mobile) {
+    @include container($mobile);
+  }
   @include container($desktop);
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+}
+
+.page-footer__box {
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }

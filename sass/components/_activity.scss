@@ -1,14 +1,11 @@
 .activity {
-  @media (min-width: $mobile) {
-    @include section(60px, 60px);
+  @media (max-width: 1199px) {
+    display: none;
   }
+  @include section(94px, 94px);
 }
 
 .activity__container {
-  @media (min-width: $mobile) {
-    @include container($mobile);
-  }
-
   @include container($desktop);
 }
 
