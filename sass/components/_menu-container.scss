@@ -1,0 +1,22 @@
+.menu-container {
+  @media (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $primaryBackground-color;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+  }
+}
+.menu-container--is-open {
+  @media (max-width: 767px) {
+    display: block;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+  }
+}

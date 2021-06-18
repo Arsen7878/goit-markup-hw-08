@@ -1,7 +1,11 @@
 .galery {
   @extend %titleTextList;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: -15px;
+  @media (max-width: 767px) {
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+  }
 }

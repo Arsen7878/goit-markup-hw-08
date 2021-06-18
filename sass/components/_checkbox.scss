@@ -1,7 +1,4 @@
 .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -11,9 +8,17 @@
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+
   color: $secondaryColor;
+
+  @media (min-width: $mobile) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__input--visually-hidden {
@@ -21,11 +26,11 @@
 }
 
 .checkbox__icon {
-  margin-right: 7px;
   border-color: $primaryColor;
   border-style: solid;
   border-width: 2px;
   border-radius: 2px;
+  margin-right: 6px;
 
   fill: $primaryBackground-color;
 
@@ -38,7 +43,6 @@
 }
 
 .checkbox__link {
-  display: block;
-  margin-left: 4px;
   color: $accentColor;
+  margin-left: 2px;
 }

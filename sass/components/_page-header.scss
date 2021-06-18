@@ -3,19 +3,41 @@
   top: 0px;
   left: 0px;
   width: 100%;
-  min-height: 80px;
   z-index: 2;
-  background-color: $primaryBackground-color;
   border-bottom: 1px solid $borderColorFooter;
+
+  background-color: $primaryBackground-color;
+  @media (min-width: $mobile) {
+    min-height: 60px;
+  }
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+  }
 }
 
 .page-header__container {
-  @include container($desktop);
-  display: flex;
-  align-items: center;
+  @media (min-width: $mobile) {
+    @include container($mobile);
+  }
+  @media (min-width: $tablet) {
+    @include container($tablet);
+  }
+  @media (min-width: $desktop) {
+    @include container($desktop);
+  }
 }
 
 .page-header__nav {
-  display: flex;
-  align-items: center;
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+  }
 }

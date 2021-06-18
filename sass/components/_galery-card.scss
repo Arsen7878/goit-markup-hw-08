@@ -1,6 +1,11 @@
 .galery-card {
-  width: 370px;
-  margin: 15px;
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    width: 370px;
+    margin: 15px;
+  }
 
   &:hover {
     box-shadow: $boxShadowHoverGaleryCard;

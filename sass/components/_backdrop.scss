@@ -32,10 +32,15 @@
     transform: translate(-50%, -50%) translateY(200%);
   }
 
-  min-width: 528px;
-  min-height: 581px;
-
   background-color: $primaryBackground-color;
   box-shadow: $boxShadow;
   border-radius: 4px;
+  @media (min-width: $desktop) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  @media (min-width: $desktop) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }

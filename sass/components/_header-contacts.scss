@@ -1,38 +1,77 @@
 .header-contacts {
   @extend %titleTextList;
-
-  display: flex;
-  margin-left: auto;
+  @media (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 84px;
+  }
 }
 
-.contacts__item:not(:first-child) {
-  margin-left: 50px;
-}
-
-.contacts__link {
-  @extend %link;
-
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: $secondaryColor;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+.header-contacts__item {
   letter-spacing: 0.02em;
-  @include animationColor();
-
+  font-weight: 500;
   &:hover,
   &:focus {
     color: $accentColor;
   }
+  @include animationColor();
 }
 
-.contacts__icon {
-  display: inline-block;
-  margin-right: 10px;
-  fill: currentColor;
+.header-contacts__link--tel {
+  @extend %link;
+  color: $secondaryColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  @include animationColor();
+
+  @media (max-width: 767px) {
+    display: block;
+    font-size: 34px;
+    line-height: 1.18;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+.header-contacts__link--email {
+  @extend %link;
+  color: $secondaryColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  @include animationColor();
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 12px;
+  }
+}
+
+.header-contacts__icon {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: inline-block;
+    margin-right: 8px;
+    fill: currentColor;
+  }
 }

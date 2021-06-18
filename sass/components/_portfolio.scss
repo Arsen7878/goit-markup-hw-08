@@ -1,9 +1,17 @@
 .portfolio {
-  @include section(174px, 60px);
+  @include section(120px, 60px);
 }
 
 .portfolio__container {
-  @include container($desktop);
+  @media (min-width: $mobile) {
+    @include container($mobile);
+  }
+  @media (min-width: $tablet) {
+    @include container($tablet);
+  }
+  @media (min-width: $desktop) {
+    @include container($desktop);
+  }
 }
 
 .portfolio__title--visually-hidden {
@@ -11,17 +19,22 @@
 }
 
 .portfolio__filter {
-  @extend %titleTextList;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 91px;
+    margin-bottom: 40px;
+  }
 }
 
-.potfolio__item:not(:first-child) {
-  margin-left: 8px;
+.portfolio__item {
+  @media (max-width: 767px) {
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
 }
