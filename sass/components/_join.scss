@@ -2,7 +2,8 @@
   @media (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media (min-width: $tablet) and (max-width: 1199px) {
+  @media (min-width: $desktop) {
+    margin-left: 70px;
   }
 }
 .join__title {

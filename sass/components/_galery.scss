@@ -1,11 +1,13 @@
 .galery {
   @extend %titleTextList;
-  @media (max-width: 767px) {
-  }
-  @media (min-width: $tablet) and (max-width: 1199px) {
+
+  @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-basis: calc((100%-2 * 30px) / 2);
     margin: -15px;
+  }
+  @media (min-width: $desktop) {
+    flex-basis: calc((100%-3 * 30px) / 3);
   }
 }

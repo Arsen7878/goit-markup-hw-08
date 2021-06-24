@@ -2,13 +2,12 @@
   @media (max-width: 767px) {
     margin-bottom: 30px;
   }
-  @media (min-width: $tablet) and (max-width: 1199px) {
-    width: 370px;
-    margin: 15px;
-  }
 
   &:hover {
     box-shadow: $boxShadowHoverGaleryCard;
+  }
+  @media (min-width: $tablet) {
+    margin: 15px;
   }
 }
 
@@ -19,6 +18,12 @@
 .galery-card__trumb {
   position: relative;
   overflow: hidden;
+}
+
+.galery-card__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .galery-card__meta {
@@ -34,7 +39,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
 .galery-card__text {

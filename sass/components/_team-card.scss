@@ -21,11 +21,10 @@
 }
 
 .team-card__image {
-  display: inline-block;
+  display: block;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 30px;
-  @media (min-width: $mobile) {
-    width: 100%;
-  }
 }
 
 .team-card__meta {

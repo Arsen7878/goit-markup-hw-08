@@ -10,13 +10,13 @@
     padding-bottom: 48px;
     padding-left: 40px;
   }
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 .menu-container--is-open {
   @media (max-width: 767px) {
     display: block;
-  }
-  @media (min-width: $tablet) and (max-width: 1199px) {
-    display: flex;
-    align-items: center;
   }
 }

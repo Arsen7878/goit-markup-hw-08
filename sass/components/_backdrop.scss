@@ -9,6 +9,7 @@
   /* Анимация бекдропа */
   @include opacity();
   background-color: $backdropBackground-color;
+  overflow-y: scroll;
 }
 
 .backdrop--is-hidden {

@@ -14,14 +14,18 @@
   @media (min-width: $mobile) {
     @include container($mobile);
   }
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: 1199px) {
     @include container($tablet);
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
   }
-  @include container($desktop);
+  @media (min-width: $desktop) {
+    @include container($desktop);
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .page-footer__box {

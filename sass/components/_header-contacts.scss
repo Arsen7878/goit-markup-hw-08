@@ -6,7 +6,15 @@
   @media (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-direction: column-reverse;
+    padding-top: 21px;
+    padding-bottom: 21px;
     margin-left: 84px;
+  }
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 305px;
   }
 }
 
@@ -18,6 +26,10 @@
     color: $accentColor;
   }
   @include animationColor();
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-contacts__link--tel {
@@ -39,10 +51,21 @@
   @media (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     align-items: center;
+
     font-size: 12px;
     line-height: 1.17;
   }
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+
+    margin-left: 30px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
+
 .header-contacts__link--email {
   @extend %link;
   color: $secondaryColor;
@@ -61,7 +84,14 @@
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -69,7 +99,7 @@
   @media (max-width: 767px) {
     display: none;
   }
-  @media (min-width: $tablet) and (max-width: 1199px) {
+  @media (min-width: $tablet) {
     display: inline-block;
     margin-right: 8px;
     fill: currentColor;

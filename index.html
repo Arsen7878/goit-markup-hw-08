@@ -26,7 +26,7 @@
           </a>
           <button
             type="button"
-            class="menu-button menu-button--is-open"
+            class="menu-button"
             data-menu-button
             aria-expanded="true"
           >
@@ -42,11 +42,7 @@
               <use href="./images/icons.svg#icon-menu" class="icon__menu"></use>
             </svg>
           </button>
-          <div
-            class="menu-container menu-container--is-open"
-            id="menu-container"
-            data-menu
-          >
+          <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a
@@ -183,9 +179,14 @@
             <li class="activity__item">
               <div class="activity__box">
                 <img
-                  src="./images/box-1.jpg"
+                  srcset="
+                    ./images/desktop/box-1-img-desktop.jpg    1x,
+                    ./images/desktop/box-1-img@2x-desktop.jpg 2x
+                  "
+                  src="./images/desktop/box-1-img-desktop.jpg"
                   alt="Написание кода"
                   width="370"
+                  class="activity__img"
                 />
                 <div class="activity__trumb">
                   <p class="activity__text">Десктопные приложения</p>
@@ -195,9 +196,14 @@
             <li class="activity__item">
               <div class="activity__box">
                 <img
-                  src="./images/box-2.jpg"
+                  srcset="
+                    ./images/desktop/box-2-img-desktop.jpg    1x,
+                    ./images/desktop/box-2-img@2x-desktop.jpg 2x
+                  "
+                  src="./images/desktop/box-2-img-desktop.jpg"
                   alt="Синхронизация девайсов"
                   width="370"
+                  class="activity__img"
                 />
                 <div class="activity__trumb">
                   <p class="activity__text">Мобильные приложения</p>
@@ -207,9 +213,14 @@
             <li class="activity__item">
               <div class="activity__box">
                 <img
-                  src="./images/box-3.jpg"
+                  srcset="
+                    ./images/desktop/box-3-img-desktop.jpg    1x,
+                    ./images/desktop/box-3-img@2x-desktop.jpg 2x
+                  "
+                  src="./images/desktop/box-3-img-desktop.jpg"
                   alt="Разработка дизайна"
                   width="370"
+                  class="activity__img"
                 />
                 <div class="activity__trumb">
                   <p class="activity__text">Дизайнерские решения</p>
@@ -225,12 +236,35 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team-card">
-              <img
-                src="./images/team-card-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                class="team-card__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-card-1-desktop.jpg    1x,
+                    ./images/desktop/team-card-1@2x-desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-card-1-tablet.jpg    1x,
+                    ./images/tablet/team-card-1@2x-tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-card-1-mob.jpg    1x,
+                    ./images/mobile/team-card-1@2x-mob.jpg 2x
+                  "
+                  media="(max-width:
+                767px)"
+                />
+                <img
+                  src="./images/mobile/team-card-1-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  class="team-card__image"
+                />
+              </picture>
               <div class="team-card__meta">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__position">
@@ -269,12 +303,34 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team-card-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                class="team-card__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-card-2-desktop.jpg    1x,
+                    ./images/desktop/team-card-2@2x-desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-card-2-tablet.jpg    1x,
+                    ./images/tablet/team-card-2@2x-tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-card-2-mob.jpg    1x,
+                    ./images/mobile/team-card-2@2x-mob.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/mobile/team-card-2-mob.jpg"
+                  alt="Ольга Репина"
+                  class="team-card__image"
+                />
+              </picture>
               <div class="team-card__meta">
                 <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__position">
@@ -313,12 +369,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team-card-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                class="team-card__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-card-3-desktop.jpg    1x,
+                    ./images/desktop/team-card-3@2x-desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-card-3-tablet.jpg    1x,
+                    ./images/tablet/team-card-3@2x-tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-card-3-mob.jpg    1x,
+                    ./images/mobile/team-card-3@2x-mob.jpg 2x
+                  "
+                  media="(max-width:
+                767px)"
+                />
+                <img
+                  src="./images/mobile/team-card-3-mob.jpg"
+                  alt="Николай Тарасов"
+                  class="team-card__image"
+                />
+              </picture>
               <div class="team-card__meta">
                 <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__position">
@@ -357,12 +436,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                src="./images/team-card-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                class="team-card__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/team-card-4-desktop.jpg    1x,
+                    ./images/desktop/team-card-4@2x-desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/team-card-4-tablet.jpg    1x,
+                    ./images/tablet/team-card-4@2x-tablet.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/team-card-4-mob.jpg    1x,
+                    ./images/mobile/team-card-4@2x-mob.jpg 2x
+                  "
+                  media="(max-width:
+                767px)"
+                />
+                <img
+                  src="./images/mobile/team-card-4-mob.jpg"
+                  alt="Михаил Ермаков"
+                  class="team-card__image"
+                />
+              </picture>
               <div class="team-card__meta">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__position">

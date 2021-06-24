@@ -1,5 +1,8 @@
 .portfolio {
   @include section(120px, 60px);
+  @media (min-width: $desktop) {
+    @include section(174px, 0px);
+  }
 }
 
 .portfolio__container {
@@ -28,6 +31,14 @@
     align-content: space-between;
     min-height: 91px;
     margin-bottom: 40px;
+  }
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 }
 
