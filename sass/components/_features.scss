@@ -1,5 +1,5 @@
 .features {
-  @media (min-width: $mobile) {
+  @media (max-width: 1199px) {
     @include section(60px, 60px);
   }
   @media (min-width: $desktop) {

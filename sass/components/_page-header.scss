@@ -2,7 +2,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
   border-bottom: 1px solid $borderColorFooter;
 
@@ -11,11 +11,13 @@
 
 .page-header__container {
   @media (max-width: 767px) {
-    @include container($mobile);
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
+  }
+  @media (min-width: $mobile) {
+    @include container($mobile);
   }
   @media (min-width: $tablet) {
     @include container($tablet);

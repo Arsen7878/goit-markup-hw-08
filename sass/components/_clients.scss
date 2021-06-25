@@ -1,5 +1,5 @@
 .clients {
-  @media (min-width: $mobile) {
+  @media (max-width: 1199px) {
     @include section(60px, 60px);
   }
   @media (min-width: $desktop) {
@@ -26,7 +26,7 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  @media (min-width: $mobile) {
+  @media (max-width: 1199px) {
     margin-bottom: 30px;
   }
   @media (min-width: $desktop) {
@@ -49,7 +49,7 @@
   }
 }
 .clients__item {
-  @media (min-width: $mobile) {
+  @media (max-width: 767px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }

@@ -28,14 +28,9 @@
 }
 
 .team-card__meta {
-  @media (min-width: $mobile) {
-    padding: 0px 122px 24px 122px;
-  }
-  @media (min-width: $tablet) {
-    padding: 0px 74px 24px 74px;
-  }
+  padding-bottom: 24px;
   @media (min-width: $desktop) {
-    padding: 0px 32px 30px 32px;
+    padding-bottom: 30px;
   }
 }
 

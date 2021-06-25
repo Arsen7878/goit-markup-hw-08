@@ -14,7 +14,7 @@
     ),
     url("../images/mobile/background-image-mob.jpg");
 
-  @media (min-width: $mobile) {
+  @media (max-width: 1199px) {
     @include section(118px, 118px);
     min-height: 400px;
   }

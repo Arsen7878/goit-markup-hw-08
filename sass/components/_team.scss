@@ -1,6 +1,6 @@
 .team {
   text-align: center;
-  @media (min-width: $mobile) {
+  @media (max-width: 1199px) {
     @include section(60px, 60px);
   }
 
@@ -26,8 +26,11 @@
 .team__title {
   @extend %titleTextList;
   @include title();
-  @media (min-width: $mobile) {
+  @media (max-width: 1199px) {
     margin-bottom: 30px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 }
 
