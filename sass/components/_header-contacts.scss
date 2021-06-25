@@ -66,6 +66,7 @@
 }
 
 .header-contacts__icon {
+  fill: currentColor;
   @media (min-width: $tablet) {
     margin-right: 8px;
   }

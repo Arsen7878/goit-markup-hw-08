@@ -480,9 +480,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: -15px;
   }
 }
 
@@ -638,6 +639,10 @@
   .header-contacts__link--email {
     margin-right: 30px;
   }
+}
+
+.header-contacts__icon {
+  fill: currentColor;
 }
 
 @media (min-width: 768px) {
