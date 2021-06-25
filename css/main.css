@@ -415,6 +415,12 @@
   }
 }
 
+.clients__container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media (min-width: 480px) {
   .clients__container {
     width: 480px;
@@ -664,6 +670,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.features__container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 480px) {
@@ -1363,6 +1375,12 @@
   background-color: #ffffff;
 }
 
+.page-header__container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media (max-width: 767px) {
   .page-header__container {
     display: -webkit-box;
@@ -1438,6 +1456,12 @@
     padding-top: 174px;
     padding-bottom: 94px;
   }
+}
+
+.portfolio__container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 480px) {
@@ -1788,6 +1812,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.team__container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 480px) {
