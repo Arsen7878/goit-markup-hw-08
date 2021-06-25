@@ -1346,10 +1346,12 @@
 }
 
 .page-header {
+  padding-left: 15px;
+  padding-right: 15px;
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
