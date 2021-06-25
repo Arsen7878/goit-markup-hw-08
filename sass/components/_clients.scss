@@ -48,7 +48,7 @@
   }
 }
 .clients__item {
-  @media (min-width: $mobile) and (max-width: 1199px) {
+  @media (min-width: $mobile) {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }

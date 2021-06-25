@@ -7,35 +7,27 @@
   border-bottom: 1px solid $borderColorFooter;
 
   background-color: $primaryBackground-color;
-  @media (max-width: 767px) {
-    min-height: 60px;
-  }
-  @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-  }
 }
 
 .page-header__container {
-  @media (min-width: $mobile) {
+  @media (max-width: 767px) {
     @include container($mobile);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
   }
   @media (min-width: $tablet) {
     @include container($tablet);
+    display: flex;
+    align-items: center;
+    min-height: 80px;
   }
   @media (min-width: $desktop) {
     @include container($desktop);
   }
 }
-
 .page-header__nav {
-  @media (max-width: 767px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 60px;
-  }
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;

@@ -1,20 +1,14 @@
 .header-contacts {
   @extend %titleTextList;
   @media (max-width: 767px) {
-    margin-bottom: 64px;
+    display: none;
   }
   @media (min-width: $tablet) and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 21px;
-    padding-bottom: 21px;
     margin-left: 84px;
   }
   @media (min-width: $desktop) {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-left: 305px;
+    margin-left: auto;
   }
 }
 
@@ -27,8 +21,12 @@
   }
   @include animationColor();
   @media (min-width: $tablet) and (max-width: 1199px) {
-    display: flex;
-    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -40,29 +38,9 @@
     color: $accentColor;
   }
   @include animationColor();
-
-  @media (max-width: 767px) {
-    display: block;
-    font-size: 34px;
-    line-height: 1.18;
-    margin-bottom: 32px;
-  }
-
-  @media (min-width: $tablet) and (max-width: 1199px) {
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-
-    font-size: 12px;
-    line-height: 1.17;
-  }
-  @media (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-
-    margin-left: 30px;
-
-    font-size: 14px;
-    line-height: 1.14;
   }
 }
 
@@ -74,34 +52,21 @@
     color: $accentColor;
   }
   @include animationColor();
-
-  @media (max-width: 767px) {
-    font-size: 24px;
-    line-height: 1.17;
-  }
   @media (min-width: $tablet) and (max-width: 1199px) {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 1.17;
     margin-bottom: 10px;
   }
-  @media (min-width: $desktop) {
+
+  @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-
-    font-size: 14px;
-    line-height: 1.14;
+  }
+  @media (min-width: $desktop) {
+    margin-right: 30px;
   }
 }
 
 .header-contacts__icon {
-  @media (max-width: 767px) {
-    display: none;
-  }
   @media (min-width: $tablet) {
-    display: inline-block;
     margin-right: 8px;
-    fill: currentColor;
   }
 }

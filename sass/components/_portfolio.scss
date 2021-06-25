@@ -1,7 +1,7 @@
 .portfolio {
   @include section(120px, 60px);
   @media (min-width: $desktop) {
-    @include section(174px, 0px);
+    @include section(174px, 94px);
   }
 }
 
