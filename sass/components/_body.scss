@@ -3,6 +3,7 @@
   color: $primaryColor;
   font-family: $primaryFont;
   letter-spacing: 0.03em;
+
   @media (min-width: 320px) {
     overflow-x: hidden;
   }
