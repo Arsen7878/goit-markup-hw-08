@@ -4,16 +4,20 @@
 
 .checkbox__label {
   position: relative;
-  display: flex;
-  align-items: center;
 
   font-weight: 400;
 
   color: $secondaryColor;
+  @media (max-width: 479px) {
+    font-size: 12px;
+    line-height: 1.15;
+  }
 
   @media (min-width: $mobile) {
     font-size: 12px;
     line-height: 1.17;
+    display: flex;
+    align-items: center;
   }
   @media (min-width: $desktop) {
     font-size: 14px;
@@ -45,4 +49,8 @@
 .checkbox__link {
   color: $accentColor;
   margin-left: 2px;
+  @media (max-width: 479px) {
+    font-size: 12px;
+    line-height: 1.15;
+  }
 }

@@ -188,7 +188,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   opacity: 1;
   z-index: 2;
@@ -356,20 +356,27 @@
 
 .checkbox__label {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 400;
   color: #757575;
+}
+
+@media (max-width: 479px) {
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.15;
+  }
 }
 
 @media (min-width: 480px) {
   .checkbox__label {
     font-size: 12px;
     line-height: 1.17;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -399,6 +406,13 @@
 .checkbox__link {
   color: #2196f3;
   margin-left: 2px;
+}
+
+@media (max-width: 479px) {
+  .checkbox__link {
+    font-size: 12px;
+    line-height: 1.15;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -812,6 +826,13 @@
   font-weight: 700;
   font-size: 20px;
   text-align: center;
+}
+
+@media (max-width: 479px) {
+  .form-modal__title {
+    font-size: 14px;
+    line-height: 1.15;
+  }
 }
 
 @media (max-width: 1199px) {
