@@ -55,6 +55,7 @@
   }
   @media (min-width: $tablet) and (max-width: 1199px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
   @media (min-width: $desktop) {
     &:not(:first-child) {

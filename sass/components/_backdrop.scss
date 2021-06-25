@@ -36,7 +36,7 @@
   background-color: $primaryBackground-color;
   box-shadow: $boxShadow;
   border-radius: 4px;
-  @media (min-width: $desktop) {
+  @media (min-width: $mobile) {
     min-width: 450px;
     min-height: 609px;
   }
